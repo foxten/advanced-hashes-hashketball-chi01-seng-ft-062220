@@ -128,6 +128,7 @@ def game_hash
 end
 
 def num_points_scored(player)
+<<<<<<< HEAD
   game_hash.each do |team, all_stats| 
     all_stats[:players].each do |player_stats|
       if player_stats[:player_name] == player
@@ -288,3 +289,15 @@ def long_name_steals_a_ton?
     end
     longest_name == greatest_steals ? true : false
 end
+=======
+  game_hash.each do |team, all_stats|
+    all_stats.each do |team_keys, team_values|
+      if team_keys == :players
+        team_values
+          end
+        end
+      end
+    end
+
+  
+>>>>>>> 05932a3e64a549d333030c3cd3b99d0d4e9b111e
